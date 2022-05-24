@@ -1,0 +1,258 @@
+>>> Comandos Python
+		# coding=utf-8 [Ínicio do código no PyCharm]
+
+		class Curso Python YouTube (Aulas):
+			"""Wallace de Freitas"""
+			def __intro__(Comandos, https://docs.python.org/3/library/) 
+						 (https://rpubs.com/gomes555/comandos_python):
+_______________________________________________________________________________________________________________________________________________________________
+>>> {NÚMEROS}
+n = int(input('Digite um número:')) ------ Números Inteiros ('1, 2, 3, 4, etc')
+n = float(input('Digite um número:')) ---- Números Flutuantes ('1.0, 2.0, 3.0, -15.678')
+n = str(input('Digite um número')) ------- Números Strings ('Sempre está no progama - Utilizar o "type(n) para mostrá-lo" - números entre as aspas')
+n = bool(input('Digite um número')) ------ Números Booleanos 'True' ou 'False'
+
++ = Adição
+- = Subtração
+* = Multiplicação
+/ = Divisão
+** = Potência ---> pow (n1, n2)
+**(1/2) = Raiz Quadrada
+**(1/3) = Raiz Cúbica
+
+// = Divisão Inteira (Resultados sem vírgula)
+% = Resto da Divisão (Resto da Divisão)
+				
+				Exemplo: 5 | 2
+						-4	 2 -> Divisão Inteira (Sem vírgula)
+						 1 -> Resto da Divisão
+
+Ordem de Precedência
+1 --- ()
+2 --- **
+3 --- *, /, //, %
+4 --- +, -
+
+"ceil" - arredondamento up
+"floor" - arredondamento down
+"trunc" - eliminar da vígula para frente
+"pow" - potência
+"sqrt" - raiz quadrada
+"factorial" - fatorial
+"random" - randomizar número
+"randint" - número random INTEIRO
+
+Import Math
+--> import + example 	comando Generalizado
+--> from + example + import = pudim	comando Específico
+Exemplos
+from random import randint
+-- exemplo = randint (0, 10)
+from time import sleep
+-- sleep(tempo)
+_______________________________________________________________________________________________________________________________________________________________
+>> {TEXTO}
+
+* Listagem
+-- Tupla >>> ()
+---> add()
+---> clear()
+---> pop()
+---> union()
+---> issuperset()
+---> issubset()
+---> intersection() 
+---> difference ()
+---> isdisjoint() 
+---> setdiscard()
+---> copy()
+
+-- Lista >>> []
+---> append() >>> Adicionar um novo elemento na lista
+---> copy()
+---> count()
+---> insert() >>> Ele usa dois parâmetros: o primeiro para indicar a 
+				posição da lista em que o elemento será inserido e o segundo para informar o 
+				item a ser adicionado na lista. (1, 'Wallace')
+---> reverse()
+---> remove() >>> Remover item
+---> sort()
+---> pop() >>> Remove o PRIMEIRO item da lista
+---> extend()
+---> index()
+---> clear() >>> Limpar elemento da lista
+
+-- Dicionário >>> {}
+---> copy()
+---> clear() >>> Limpar Dicionário
+---> fromkeys() >>> Utilizar as chaves
+---> items() >>> Itens do Dicionário
+---> get() 
+---> keys() >>> Chaves do Dicionário
+---> pop() >>> Remove o PRIMEIRO item do Dicionário
+---> values() >>> Values do Dicionário
+---> update()
+---> setdefault()
+---> popitem()
+--------------------------------------------------------
+
+* Números
+-- randint (0, 10) >>> randomizar números de desejo (INTEIRO)
+-- max() >>> MAIOR número
+-- min() >>> MENOR número
+-- sort() >>> ordem CRESCENTE dos números
+
+* Fatiamento
+-- len(frase)
+-- sorted() >>> Deixar em ordem alfabética
+-- .format(example.index()) >> Localizar na Tupla
+-- frase.count('example') >>> contar quantas letras tem.
+-- frase.count('o', 0, 13) >>> contagem com FATIAMENTO
+-- frase.find('deo') >>> encontrar a exata frase na posição da string
+-- frase.find('Exemplo não existente') >>> retorna com o valor '-1'
+	-- frase.replace('Python', 'ANDROID') >>> Substituir frases
+-- frase.upper() >>> deixar toda a string em maíusculo
+-- frase.lower() >>> deixar toda a string em minúsculo
+-- frase.capitalize() >>> transformar todos os caracteres em minúsculo, menos o primeiro caracter
+-- frase.title() >>> analisar as palavras na string e transformar o primeiro caracter ápos o espaço
+-- frase.strip() >>> remover os ESPAÇOS inúteis
+	-- frase.rstrip() >>> remover os ESPAÇOS inúteis da DIREITA (RIGHT)
+	-- frase.lstrip( >>> remover os ESPAÇOS inúteis da ESQUERDA (LEFT)
+-- frase.split() >>> remove os ESPAÇOS e separa em uma lista
+	-- '-'.join(frase) >>> junta toda a lista
+-- 'Curso' in frase >>> Verificar certa frase (operador)
+frase [9] --> Ler a letra usando o caracter
+frase [:5] --> Ler a string do caractere ZERO até o número selecionado (5)
+frase [15:] --> Ler a string do caractere à partir do 15 (sem final)
+frase [9::3] --> Ler a string até o final pulando duas casas
+frase [9:13] --> Ler uma cadeia fechada (não contando o último valor)
+frase [9:21:2] --> Ler uma cadeia fechada (porém, pulando um caracter)
+_______________________________________________________________________________________________________________________________________________________________
+>> {USANDO O TAB}
+
+Exemplos básicos (Estrutura Condicional): 
+
+se cara.esquerda()          if carro.esquerda():
+	bloco_V_					bloco True
+
+senão                       else:
+	bloco_F_					bloco False
+
+
+tempo = int(input('Quantos tem seu carro?'))
+if tempo<=3:
+	print('Carro Novo')
+else:
+	print('Carro Velho')
+print('-- FIM ! --')
+
+tempo = int(input('Quantos tem seu carro?'))
+print('Carro Novo'if tempo<=3 else'Carro Velho')
+print('-- FIM ! --')
+
+nome = str(input('Qual o seu nome? '))
+print('')
+if nome == 'Wallace':
+	print('Seu nome é muito bonito!!')
+elif nome == 'Tony Stark' or nome == 'Thor' or nome == 'Hulk' or nome == 'Steve':
+	print('Pertence aos Vingadores!')
+else:
+	print('Um nome comum.')
+print('')
+print('Tenha um bom dia, {}!'.format(nome))
+_______________________________________________________________________________________________________________________________________________________________
+>> {CÓDIGO DE CORES, FONTE E ESTILO}
+
+ANSI - escape sequence
+
+\033[0;33;44m(String exemplo)[m
+
+STYLE			TEXT			FUNDO
+0 Nenhum		30				40			Branco
+1 Negrito		31				41			Vermelho
+4 Sublinh-- 32		    42		  Verde
+7 Inverter  33			  43	    Amarelo
+				    34				44      Azul
+				    35				45	    Roxo
+				    36				46	    Ciano
+				    37 				47	    Cinza
+_______________________________________________________________________________________________________________________________________________________________
+>> {ESTRUTURA DE REPETIÇÃO "for"}
+Por exemplo:
+for c in range(0, 4):
+print(c)
+print(‘Acabou’)
+
+
+Exemplo:
+laço c no intervalo(1, 10)
+	passo
+pega
+
+
+Comando real > ('''for c in xrange(1,10):
+					pass''')
+for x in xrange(1,10):
+	pass
+{Repetir 10x}
+for x in xrange(0,10):
+	print('Oi!')
+print('FIM!!!')
+
+{Contagem de 1 a 10}
+for x in xrange(1,11):
+	print(x)
+
+_______________________________________________________________________________________________________________________________________________________________
+>> {ESTRUTURA DE REPETIÇÃO "while"}
+
+while enquanto não maça:
+	if bloco:
+		passo
+	if espaço:
+		pula
+	if coin:
+		pega
+pega #maçã
+
+c = 1
+while c < 10:
+	print(c)
+	c += 1
+print('Acabou!')
+
+n = 1
+while n != 0:
+	n = int(input('Digite um número: '))
+print('Finalizou!')
+
+n = s = 0
+while n != 999:
+	n = int(input('Digite um número: '))
+	s += n
+print('A soma vale {}.'.format(s))
+
+n = cont = 0
+while cont < 5:
+	n = int(input('Digite um número: '))
+	cont += 1
+
+r = 'S'
+while r == 'S':
+	print('-=' *5)
+	n = int(input('Digite um número: '))
+	r = str(input('Deseja continuar [S/N]: ')).upper()
+	print('-=' *5)
+	print('')
+print('Sessão encerrada!')
+
+>>> PARANDO A ESTRUTURA #(break)
+
+n = s = 0
+while True:
+	n = int(input('Digite um número: '))
+	if n == 999:
+		break
+	s += n
+print('A soma vale {}.'.format(s))
+_______________________________________________________________________________________________________________________________________________________________
