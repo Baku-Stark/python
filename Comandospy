@@ -256,3 +256,147 @@ while True:
 	s += n
 print('A soma vale {}.'.format(s))
 _______________________________________________________________________________________________________________________________________________________________
+>> {FUNÇÃO "def"}
+
+def mostraLinha():
+	print('------------------------------')
+
+
+mostraLinha()
+print('     SISTEMA DE ALUNOS     ')
+mostraLinha()
+print('')
+mostraLinha()
+print('     CADASTRO DE ALUNOS     ')
+mostraLinha()
+print('')
+mostraLinha()
+print('     SISTEMA ESCOLAR     ')
+mostraLinha()
+
+--------------------------------------------------------
+
+def mensagem(msg):
+	print('------------------------------')
+	print(msg)
+	print('------------------------------')
+
+
+mensagem('     SISTEMA DE ALUNOS     ')
+--------------------------------------------------------
+>>> UTILIZANDO O "def" com números
+def soma(a, b):
+	print('--- A = {} e B = {} ---'.format(a, b))
+	s = a + b
+	print('{} + {} = {}'.format(a, b, s))
+	print('')
+
+
+# Main
+soma(1, 4)  #5
+soma(5, 5)  #10
+soma(5, 10) #15
+--------------------------------------------------------
+>>> EMPACOTAMENTO EM "def"
+
+def contador(* num):
+	print(num)
+
+
+contador(5, 7, 3, 1, 4)
+contador(8, 4, 7)
+
+def contador(* num):
+	for valor in num:
+		print(valor),
+
+
+contador(5, 7, 3, 1, 4)
+contador(8, 4, 7)
+--------------------------------------------------------
+--->>> Interactive Help
+--- help()
+print("string exemplo (input, print, etc".__doc__)
+
+###
+
+#Fazendo Docstring
+def function(i, f, p):
+	"""
+	-> Faz uma contagem e mostra na tela.
+	:param i: Início da contagem
+	:param f: Fim da contagem
+	:param p: Passo da contagem
+	:return: Sem retorno
+	Função criada por Wallace de Freitas
+	"""
+	c = i
+	while c <= f:
+		print('{}'.format(c)),
+		c += p
+	print('Fim!')
+
+function(2, 10, 2)
+help(function)
+
+--->>> Parâmetros opcionais
+
+def somar(a=0, b=0, c=0):
+	"""
+	-> Faz a soma dos números e mostra na tela.
+	:param a: 1° Valor
+	:param b: 2° Valor
+	:param c: 3° Valor
+	:return: Sem retorno
+	Função criada por Wallace de Freitas
+	"""
+	s = a + b + c
+	print('A soma vale {}'.format(s))
+
+somar(3, 2, 5)
+somar(8, 4)
+somar()
+help(somar)
+
+--->>> Escopo de Variáveis
+
+def teste():
+	x = 8
+	print('Na função teste, n vale {}.'.format(n))
+	print('Na função teste, x vale {}.'.format(x))
+
+
+# -----
+n = 2
+teste()
+print('No programa principal, n vale {}.'.format(n))
+
+
+def teste(b):
+	global a
+	a = 8
+	b += 4
+	c = 2
+	print('[A] dentro vale {}.'.format(a))
+	print('[B]dentro vale {}.'.format(b))
+	print('[C]dentro vale {}.'.format(c))
+
+
+# ---
+a = 5
+teste(a)
+print('[A] fora vale {}.'.format(a))
+
+
+--->>> Retornando Valores
+def somar(a=0, b=0, c=0):
+	s = a + b + c
+	return s
+
+
+# ===
+resp1 = somar(3, 2, 5)
+resp2 = somar(2, 2)
+resp3 = somar(6)
+print('Todas as somas foram: {} {} e {}'.format(resp1, resp2, resp3))
+_______________________________________________________________________________________________________________________________________________________________
