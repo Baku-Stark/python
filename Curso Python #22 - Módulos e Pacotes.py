@@ -14,8 +14,13 @@ def triplo(n):
 
 
 # ---
+import uteis
+
 num = int(input('Digite um valor: '))
-fat = fatorial(num)
+print('')
+fat = uteis.fatorial(num)
 print('O fatorial de {}! é: {}.'.format(num, fat))
-print('>>> O dobro de {} é: {}.'.format(num, dobro(num))) 
-print('>>> O triplo de {} é: {}.'.format(num, triplo(num)))
+db = uteis.dobro(num)
+print('>>> O dobro de {} é: {}.'.format(num, db)) 
+tp = uteis.triplo(num)
+print('>>> O triplo de {} é: {}.'.format(num, tp))
