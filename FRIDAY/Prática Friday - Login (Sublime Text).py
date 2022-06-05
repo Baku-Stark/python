@@ -3,13 +3,13 @@ print('-=' *30)
 username = ''
 senhapass = ''
 user = input('>> Username: ')
-if user == 'WallaceIM':
+if user == '---':
 	#print('usuário confirmado!')
 	username = True
 else:
 	print('\033[1;31mUsuário não encontrado\033.')
 senha = input('>> Senha: ')
-if senha == 'wallace@123':
+if senha == '---':
 	#print('senha confirmada!')
 	senhapass = True
 else:
