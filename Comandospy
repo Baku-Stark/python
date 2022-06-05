@@ -165,7 +165,7 @@ ________________________________________________________________________________
 
 ANSI - escape sequence
 
-\033[0;33;44m(String exemplo)[m
+\033[0;33;44m(String exemplo)\033[m
 
 STYLE			TEXT			FUNDO   Cor
 0 Nenhum		30			40	Branco
