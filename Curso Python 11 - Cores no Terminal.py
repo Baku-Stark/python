@@ -3,15 +3,15 @@
 ANSI - escape sequence
 
 \033[0;33;44m
-STYLE			TEXT			FUNDO
+STYLE			TEXT			       FUNDO
 0 Nenhum		30				40			Branco
 1 Negrito		31				41			Vermelho
-4 Sublinhado	32				42			Verde
+4 Sublinhado		32				42			Verde
 7 Inverter		33				43			Amarelo
-				34				44			Azul
-				35				45			Roxo
-				36				46			Ciano
-				37 				47			Cinza
+			34				44			Azul
+			35				45			Roxo
+			36				46			Ciano
+			37 				47			Cinza
 
 Exemplo prático
 print('\033[1;36;47mOlá, mundo!\033[m')
