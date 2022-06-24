@@ -17,7 +17,7 @@ n = bool(input('Digite um número')) ------ Números Booleanos 'True' ou 'False'
 * = Multiplicação
 / = Divisão
 ** = Potência ---> pow (n1, n2)
-**(1/2) = Raiz Quadrada
+**(0.5) = Raiz Quadrada
 **(1/3) = Raiz Cúbica
 
 // = Divisão Inteira (Resultados sem vírgula)
@@ -48,8 +48,12 @@ Import Math
 Exemplos
 from random import randint
 -- exemplo = randint (0, 10)
+
 from time import sleep
 -- sleep(tempo)
+
+from datetime import date
+-- ano_atual = date.today().year
 _______________________________________________________________________________________________________________________________________________________________
 >> {TEXTO}
 
@@ -167,15 +171,15 @@ ANSI - escape sequence
 
 \033[0;33;44m(String exemplo)\033[m
 
-STYLE			TEXT			FUNDO   Cor
-0 Nenhum		30			40	Branco
-1 Negrito		31			41      Vermelho
-4 Sublinh--             32		        42      Verde
-7 Inverter              33			43	Amarelo
-		        34			44      Azul
-		        35			45	Roxo
-			36			46	Ciano
-			37 			47	Cinza
+STYLE			TEXT				FUNDO
+0 Nenhum		30				40			Branco
+1 Negrito		31				41			Vermelho
+4 Sublinhado		32				42			Verde
+7 Inverter		33				43			Amarelo
+			34				44			Azul
+			35				45			Roxo
+			36				46			Ciano
+			37 				47			Cinza
 _______________________________________________________________________________________________________________________________________________________________
 >> {ESTRUTURA DE REPETIÇÃO "for"}
 Por exemplo:
@@ -247,7 +251,6 @@ while r == 'S':
 print('Sessão encerrada!')
 
 >>> PARANDO A ESTRUTURA #(break)
-
 n = s = 0
 while True:
 	n = int(input('Digite um número: '))
