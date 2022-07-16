@@ -98,6 +98,29 @@ ________________________________________________________________________________
 ---> update()
 ---> setdefault()
 ---> popitem()
+
+
+{CENTRALIZA, JUSTIFICAR-DIREITA E JUSTIFICAR-ESQUERDA}
+
+linha = '-' * 50
+titulo = 'Aulas de Python'
+
+#Justificar para esquerda
+print(titulo.ljust(50))
+print(linha)
+
+#centralizar
+print(titulo.center(50))
+print(linha)
+
+#justificar para a direita
+print(titulo.rjust(50))
+print(linha)
+
+{ESPAÇAMENTO}
+print('{:>5}'.format('Texto')) # espaçamento em 5 para a direita
+
+
 --------------------------------------------------------
 
 * Números
@@ -128,7 +151,7 @@ ________________________________________________________________________________
 frase [9] --> Ler a letra usando o caracter
 frase [:5] --> Ler a string do caractere ZERO até o número selecionado (5)
 frase [15:] --> Ler a string do caractere à partir do 15 (sem final)
-frase [9::3] --> Ler a string até o final pulando duas casas
+frase [9:3] --> Ler a string até o final pulando duas casas
 frase [9:13] --> Ler uma cadeia fechada (não contando o último valor)
 frase [9:21:2] --> Ler uma cadeia fechada (porém, pulando um caracter)
 _______________________________________________________________________________________________________________________________________________________________
@@ -171,15 +194,15 @@ ANSI - escape sequence
 
 \033[0;33;44m(String exemplo)\033[m
 
-STYLE			TEXT				FUNDO
+STYLE			TEXT			FUNDO
 0 Nenhum		30				40			Branco
 1 Negrito		31				41			Vermelho
-4 Sublinhado		32				42			Verde
+4 Sublinhado	32				42			Verde
 7 Inverter		33				43			Amarelo
-			34				44			Azul
-			35				45			Roxo
-			36				46			Ciano
-			37 				47			Cinza
+				34				44			Azul
+				35				45			Roxo
+				36				46			Ciano
+				37 				47			Cinza
 _______________________________________________________________________________________________________________________________________________________________
 >> {ESTRUTURA DE REPETIÇÃO "for"}
 Por exemplo:
